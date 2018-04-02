@@ -1,0 +1,48 @@
+{
+  "name": "promise-mock-api",
+  "version": "1.0.0",
+  "description": "Mock APIs using classes based in \"Fetch API\" and \"Axios JS\". Using \"Local Storage\" the data are saved, the \"ApiBase\" provides a GET, POST, PUT and DELETE default methods and easily add your own methods.",
+  "private": true,
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drprado2/promise-mock-api.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [
+    "mock",
+    "mock-api",
+    "mock-fetch",
+    "mock-axios",
+    "mock-promise"
+  ],
+  "tags": [
+    "mock",
+    "mock-api",
+    "mock-fetch",
+    "mock-axios",
+    "mock-promise"
+  ],
+  "author": {
+    "name": "Adriano Prado de Oliveira",
+    "email": "drprado2@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drprado2/promise-mock-api/issues"
+  },
+  "homepage": "https://github.com/drprado2/promise-mock-api#readme",
+  "devDependencies": {
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1"
+  }
+}
