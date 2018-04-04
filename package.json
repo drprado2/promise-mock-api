@@ -8,8 +8,21 @@
     "type": "git",
     "url": "git+https://github.com/drprado2/promise-mock-api.git"
   },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "verbose": true,
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack"
   },
   "keywords": [
@@ -36,7 +49,10 @@
   },
   "homepage": "https://github.com/drprado2/promise-mock-api#readme",
   "devDependencies": {
+    "babel-jest": "^22.4.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-stage-0": "^6.24.1",
+    "jest": "^22.4.3",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13"
   },
