@@ -1,7 +1,7 @@
 export default class CrudBase{
   constructor(tableName){
     const storage = localStorage.getItem(tableName);
-    const dataSource = storage ? JSON.parse(storage).data : [];
+    const dataSource = storage ? JSON.parse(storage)[tableName] : [];
 
     this.dataSource = dataSource;
     this.tableName = tableName;
@@ -60,7 +60,8 @@ export default class CrudBase{
   }
 
   commit = () => {
-    const json = {data: this.dataSource};
+    const json = Object.create(null);
+    json[this.tableName] = this.dataSource;
 
     localStorage.setItem(this.tableName, JSON.stringify(json));
   }
