@@ -1,4 +1,4 @@
-import CrudBase from '../lib/crud-base';
+import CrudBase from '../src/crud-base';
 import LocalStorageMock from './mocks/localStorageMock';
 
 let crudBase;

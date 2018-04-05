@@ -1,6 +1,6 @@
 {
   "name": "promise-mock-api",
-  "version": "1.0.0",
+  "version": "1.1.4",
   "description": "Mock APIs using classes based in \"Fetch API\" and \"Axios JS\". Using \"Local Storage\" the data are saved, the \"ApiBase\" provides a GET, POST, PUT and DELETE default methods and easily add your own methods.",
   "readmeFilename": "README.md",
   "repository": {
@@ -22,7 +22,7 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "webpack"
+    "build": "babel src -d lib"
   },
   "keywords": [
     "mock",
@@ -48,12 +48,11 @@
   },
   "homepage": "https://github.com/drprado2/promise-mock-api#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-jest": "^22.4.3",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-stage-0": "^6.24.1",
-    "jest": "^22.4.3",
-    "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13"
+    "jest": "^22.4.3"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
